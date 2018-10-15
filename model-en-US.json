@@ -1,0 +1,68 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "bitcoin currency",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetCurrency",
+          "slots": [
+            {
+              "name": "count",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "currency",
+              "type": "currency"
+            }
+          ],
+          "samples": [
+            "how much is {count} {currency} in bitcoin"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "currency",
+          "values": [
+            {
+              "name": {
+                "value": "usd",
+                "synonyms": [
+                  "dollars"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "eur",
+                "synonyms": [
+                  "euro"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
